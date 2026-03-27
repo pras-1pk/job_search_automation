@@ -1,0 +1,27 @@
+# =============================================================================
+# .env — Job Agent local config
+# ⚠️  Never commit this file. It is listed in .gitignore.
+# =============================================================================
+
+# ── GCP Infrastructure ────────────────────────────────────────────────────────
+# Leave blank to auto-detect from: gcloud config get-value project
+GCP_PROJECT_ID=
+
+GCP_REGION=asia-south1
+
+# ── Naming ────────────────────────────────────────────────────────────────────
+JOB_NAME=job-agent
+SA_NAME=job-agent-sa
+REPO_NAME=job-agent
+SCHEDULER_NAME=job-agent-daily
+
+# ── Schedule ──────────────────────────────────────────────────────────────────
+# 9:00 AM IST = 03:30 UTC
+SCHEDULE="0 9 * * *"
+TIMEZONE=Asia/Kolkata
+
+# ── Job runtime config ────────────────────────────────────────────────────────
+JOB_SEARCH_QUERIES="Software Engineer 2,Backend Developer,Senior Software Developer"
+JOB_LOCATION=India
+JOBS_PER_QUERY=10
+ATS_THRESHOLD=70
