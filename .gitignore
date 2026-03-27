@@ -12,4 +12,5 @@ Thumbs.db
 
 # Ignore build outputs
 dist/
-build/
+build/env
+.env
