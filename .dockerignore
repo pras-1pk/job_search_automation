@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Local secrets — never bake into image
+.env
+.env.*
+*.key
+*.pem
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+dist/
+build/
+
+# Dev / IDE
+.vscode
+.idea
+*.swp
+*.DS_Store
+
+# Docs and scripts — not needed at runtime
+*.md
+cicd.sh
+SETUP.md
+
+# Test files
+tests/
+test_*.py

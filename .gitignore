@@ -1,0 +1,15 @@
+# Ignore environment variables (Crucial for security!)
+.env
+secret_key.txt
+
+# Ignore dependencies
+node_modules/
+venv/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build outputs
+dist/
+build/
